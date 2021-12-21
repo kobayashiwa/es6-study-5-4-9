@@ -11,3 +11,8 @@ JavaScript 学習コース V > ファイルを分割しよう > 4.名前付き�
 const dog1 = new Dog("レオ", 4, "チワワ"); 
 export {dog1};　/* defaultを書かずに、名前を{}で囲んでエクスポート */
 ```
+▼ インポート側（script.js）
+```
+import {dog1} from "./dogData"; /* 「import { 値の名前 } from "./ファイル名"」と{}で囲んで指定 */
+dog1.info();
+```
